@@ -11376,7 +11376,7 @@ body {
     color: #fff;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: #ccc;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
@@ -11416,7 +11416,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 35rem;
-  padding: 15rem 0;
+  padding: 8rem 0;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
@@ -11444,7 +11444,6 @@ body {
 }
 .masthead h2,
 .masthead .h2 {
-  max-width: 10rem;
   font-size: 1rem;
 }
 @media (min-width: 768px) {
@@ -11456,6 +11455,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
+    padding: 15rem 0;
     height: 50vh;
     padding: 0;
   }
@@ -11467,7 +11467,6 @@ body {
   }
   .masthead h2,
   .masthead .h2 {
-    max-width: 30rem;
     font-size: 1.25rem;
   }
 }
@@ -11506,6 +11505,17 @@ body {
   .projects-section .project-text {
     padding: 5rem;
   }
+}
+
+.fade-top-bottom {
+  /* Circular gradient fade: starts fading 25% from the edge of the ellipse */
+  -webkit-mask-image: radial-gradient(
+    ellipse,
+    black 0%,
+    black 30%,
+    transparent 70%
+  );
+  mask-image: radial-gradient(ellipse, black 0%, black 30%, transparent 70%);
 }
 
 .signup-section {
